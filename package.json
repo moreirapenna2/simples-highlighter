@@ -1,0 +1,25 @@
+{
+    "name": "simples-highlighter",
+    "displayName": "Simples highlighter",
+    "description": "Suporte para a linguagem Simples",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "simples",
+            "aliases": ["Simples", "simples"],
+            "extensions": [".simples"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "simples",
+            "scopeName": "source.simples",
+            "path": "./syntaxes/simples.tmLanguage.json"
+        }]
+    }
+}
